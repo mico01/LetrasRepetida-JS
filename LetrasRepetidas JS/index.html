@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LETRAS REPETIDAS JS</title>
+  </head>
+
+  <!--      LETRAS REPETIDAS  -->
+  <body>
+ 
+
+    <script>
+       var miNombre = ["f","a","b","r","i","z","i","o",8];
+       for (x in miNombre){
+           document.writeln(miNombre[x] +"<br>")
+       }
+       document.writeln("<br>");
+
+       var vocali = ["a","e","i","o","u"];
+       var patron = 8;
+
+       for(x in miNombre)
+          if ( miNombre[x] == vocali[0])
+       {
+           document.write( miNombre[x] + "  es una vocal"+"<br>");
+       }
+       else if ( miNombre[x] == vocali[1])
+       {
+           document.write( miNombre[x] + "  es una vocal"+"<br>");
+       }
+       else    if ( miNombre[x] == vocali[2])
+       {
+            document.write( miNombre[x] + "  es una vocal"+"<br>");
+       }
+       else    if ( miNombre[x] == vocali[3])
+       {
+           document.write( miNombre[x] + "  es una vocal"+"<br>");
+       }
+        else   if ( miNombre[x] == vocali[4])
+       {
+           document.write( miNombre[x] + "  es una vocal"+"<br>")
+       }
+       else if (miNombre[x] == patron)
+       {
+          document.write( miNombre[x] + " esto es un numero!"+"<br>")
+       }
+        else
+       {
+           document.write( miNombre[x] + "  es una consonante"+"<br>");
+       }
+
+      miNombre.splice(8,1);
+      document.write("----------FASE3------------------"+"<br>");
+      var dizionario = {f:"1",a:"1",b:"t",r:"1",i:"2",z:"1",i:"2",o:"1"};
+      for (x in dizionario){
+           document.writeln(x);
+       }
+       document.writeln("<br>");
+      
+      console.log(dizionario);
+
+      
+
+      document.write("----------FASE4------------------"+"<br>");
+      var miCognome = ["p","a","n","t","i","n","i"];
+      var miNombreCompleto = miCognome.concat(miNombre);
+      document.write(miNombreCompleto + "<br>");
+      miNombreCompleto.splice(7,0," ");
+      document.writeln(miNombreCompleto);
+
+      
+
+    
+
+
+
+    </script>
+  </body>
+</html>
